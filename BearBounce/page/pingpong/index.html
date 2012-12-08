@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>OO</title>
+		<meta name="author" content="Walter"/>
+		<style>
+			#platform {
+				background: #e0ffe0 url("./img/pixel_grid.jpg");
+				width: 800px;
+				height: 400px;
+				position: relative;
+				overflow: hidden;
+			}
+			#ball {
+				background: #fbb;
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				left: 150px;
+				top: 100px;
+				border-radius: 20px;
+			}
+			.paddle {
+				background: #bbf;
+				left: 50px;
+				top: 70px;
+				position: absolute;
+				width: 60px;
+				height: 140px;
+				border-radius: 10px;
+			}
+			#paddleB {
+				left: 640px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header><h1>PingPong</h1></header>
+		<div id="game">
+			<div id="platform">
+				<div id="paddleA" class="paddle"></div>
+				<div id="paddleB" class="paddle"></div>
+				<div id="ball"></div>
+			</div>			
+		</div>
+		
+		
+		
+		
+		
+		
+		<footer>This is a example of creating a Pingpong Game</footer>
+		<!--put javascript here for better page loading-->		
+		<script type="text/javascript" src="../../scripts/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="pingpong.js"></script>
+	</body>
+</html>

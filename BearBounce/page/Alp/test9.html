@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>test9</title>
+		<meta name="description" content="" />
+		<meta name="author" content="1" />
+		<style>
+			#outter{
+				width: 100px;
+				height: 100px;
+				background-color: #00C7CE;
+			}
+		</style>
+	</head>
+	<body>
+	
+	<div id="outter">
+		World
+	</div>
+	<input type="button" id="btn" value="change" />
+	<script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery.flip.min.js"></script>	
+	<script type="text/javascript">
+		$(function() {
+			$("#btn").click(function() {
+				$("#outter").flip({
+					direction: 'rl',
+					content: "Hello"
+				})
+			});
+		});
+		</script>
+	</body>
+</html>

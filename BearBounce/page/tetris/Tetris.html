@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>canvas - Image color picker | Script Tutorials</title>
+        <script type="text/javascript" src="./js/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <link rel="stylesheet" href="Teris.css">
+    </head>
+    <body>
+        <h1><a href="#"> HTML5 TETRIS 1.0</a></h1>
+        <div class="container" onkeypress="onKeyDown()">
+            <div class="column1">
+                <canvas id="panel" width="300" height="600"></canvas>
+            </div>
+            <div class="column2">
+                <div>Preview:</div>
+                <div id="preview">
+                    <canvas id="next" width="200" height="200"></canvas>
+                </div>
+                <div>游戏选项:</div>
+                <div margin=10 padding=10>
+                    <div margin=0>复杂图形<input type="checkbox" id="ComplexTetris" /></div>
+                    <div margin=0>落地显示<input type="checkbox" id="DownDemo" checked=true /></div>
+                </div>
+                <hr />
+                <div>Score<input type="text" id="Score" value="0"></div>
+                <hr />
+                <div>Debug<input type="text" id="hexVal" /></div>
+                <hr />  
+                <div><input type="button" value="Start" id="swImage" /></div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <footer>
+            <h2>Fonda Product 2012/04/11</h2>
+        </footer>
+    </body>
+</html>
+
